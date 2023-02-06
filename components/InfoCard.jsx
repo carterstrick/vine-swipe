@@ -10,7 +10,12 @@ export const InfoCard = ({ title, name, description, link }) => {
         <div className={styles.verifyContainer}>
           <img className={styles.verifyIcon} src="/assets/verifyIcon.png" />
         </div>
-        <a href={link} target="_blank" className={styles.playButton}>
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrernpm"
+          className={styles.playButton}
+        >
           <img
             className={styles.image}
             src="/assets/playButtonBlue.svg"
