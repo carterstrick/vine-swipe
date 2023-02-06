@@ -6,6 +6,9 @@ import styles from "../styles/cardFace.module.scss";
 
 export const CardFace = ({ index }) => {
   let currentCard = {};
+  const firstCardText = `We're making a "Where Are They Now" series on old viner stars. Tell
+  us who you want to see!`;
+  const lastCardText = `You've reached the end!`;
 
   if (index === -1) {
     currentCard = (
@@ -13,10 +16,7 @@ export const CardFace = ({ index }) => {
         <div className={styles.endCard}>
           Help Us Pick a Cast!
           <br />
-          <div className={styles.firstCardText}>
-            We're making a "Where Are They Now" series on old viner stars. Tell
-            us who you want to see!
-          </div>
+          <div className={styles.firstCardText}>{firstCardText}</div>
         </div>
       </div>
     );
@@ -39,7 +39,7 @@ export const CardFace = ({ index }) => {
           ⭐️ 🎉 ⭐️
           <br />
           <br />
-          You've reached the end!
+          {lastCardText}
           <br />
           <br />
         </div>

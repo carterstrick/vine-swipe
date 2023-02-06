@@ -13,7 +13,7 @@ export const InfoCard = ({ title, name, description, link }) => {
         <a
           href={link}
           target="_blank"
-          rel="noreferrernpm"
+          rel="noreferrer"
           className={styles.playButton}
         >
           <img
