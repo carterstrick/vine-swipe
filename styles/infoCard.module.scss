@@ -1,0 +1,85 @@
+.cardWrapper {
+  position: relative;
+  padding-top: 14px;
+  width: 100%;
+}
+
+.videoTitle {
+  font-family: "ClashDisplay-Semibold";
+  color: black;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.nameBadgeBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.nameLabel {
+  font-family: "ClashDisplay-Medium";
+  color: #f7288c;
+  font-size: 16px;
+
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-right: 36px;
+  padding-bottom: 6px;
+
+  display: inline-block;
+  background-color: #ffeaf3;
+  border-radius: 12px;
+}
+
+.descriptionLabel {
+  font-family: "JetBrains-Regular";
+  color: black;
+  font-size: 14px;
+}
+
+.verifyContainer {
+  position: relative;
+  display: inline-block;
+  background-color: #ffeaf3;
+  margin-left: -36px;
+  //height: 32px;
+  // padding-top: 6px;
+  // padding-bottom: 6px;
+}
+
+.verifyIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+
+.playButton {
+  position: relative;
+  height: 28px;
+  margin-left: 8px;
+
+  appearance: none;
+  background-color: inherit;
+  border: 0;
+  cursor: grab;
+
+  transition: transform 0.2s ease-in-out;
+
+  :hover {
+    transform: scale(1.25);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.image {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: none;
+}

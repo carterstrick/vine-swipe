@@ -1,0 +1,15 @@
+.playerWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  // background-color: black;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}

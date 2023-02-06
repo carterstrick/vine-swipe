@@ -1,0 +1,43 @@
+.outerVideoHolder {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.endCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #f7288c;
+  color: white;
+  border-radius: 10px;
+
+  font-family: "ClashDisplay-Semibold";
+  text-align: center;
+  font-size: 32px;
+}
+
+.firstCardText {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+
+  color: white;
+  opacity: 0.72;
+
+  font-family: "JetBrains-Regular";
+  text-align: center;
+  font-size: 16px;
+}

@@ -1,0 +1,7 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--cellSize), 1fr));
+  grid-gap: 0px;
+  grid-auto-flow: row dense;
+  box-sizing: border-box;
+}

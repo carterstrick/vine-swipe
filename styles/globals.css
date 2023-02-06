@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: black;
+  /* #f3f4f6 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gridBase: 3;
+  --cellSize: 90px;
+}
+
+@media screen and (max-width: 1280px) {
+  :root {
+    --gridBase: 3;
+    --cellSize: 80px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  :root {
+    --gridBase: 3;
+    --cellSize: 90px;
+  }
+}
+@media screen and (max-width: 720px) {
+  :root {
+    --gridBase: 3;
+    --cellSize: 70px;
+  }
+}
+@media screen and (max-width: 520px) {
+  :root {
+    --gridBase: 1;
+    --cellSize: 280px;
+  }
+}
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("../public/fonts/mad/ClashDisplay-Regular.woff2");
+  /* font-weight: "500";
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("../public/fonts/mad/ClashDisplay-Medium.woff2");
+}
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+  src: url("../public/fonts/mad/ClashDisplay-Semibold.woff2");
+}
+
+@font-face {
+  font-family: "JetBrains-Light";
+  src: url("../public/fonts/mad/JetBrainsMono-Light.woff2");
+}
+
+@font-face {
+  font-family: "JetBrains-Regular";
+  src: url("../public/fonts/mad/JetBrainsMono-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains-Medium";
+  src: url("../public/fonts/mad/JetBrainsMono-Medium.woff2");
+}
