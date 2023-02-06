@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
 const Meta = (props) => {
-  const title = props.title ?? "How Much Do You Make?";
+  const title = props.title ?? "Vine Swipe - Mad Realities";
   const description =
     props.description ??
-    "A sideways look at the personal finances of nasty old professionals.";
+    `We're making a "Where Are They Now" of old Vine stars. Tell us who you'd like to see.`;
   const image =
     props.image ??
-    "https://book.thenetworkstate.com/assets/quickstart-sectioned.png";
-  const url = props.url ?? "https://howmuchdoyoumake.com";
+    "https://uploads-ssl.webflow.com/622fc4f6b3844822387e06d6/63e193e21b378b4af3401b37_vineSwipeForGraph.png";
+  const url = props.url ?? "https://vine-swipe.vercel.app";
 
   const [faviconHref, setFaviconHref] = useState("/favicon.ico");
 
@@ -55,7 +55,7 @@ const Meta = (props) => {
         />
         <meta
           property="twitter:creator"
-          content="@capitalxyz"
+          content="@Carterstrick96"
           key="twitter:creator"
         />
 
