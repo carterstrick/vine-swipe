@@ -5,6 +5,7 @@ import styles from "../styles/intro.module.scss";
 
 import NavBar from "./NavBar";
 import { Cards } from "./Cards";
+import BrightLights from "./BrightLights";
 
 const Intro = () => {
   const [value, setValue] = useState("");
@@ -15,7 +16,7 @@ const Intro = () => {
 
   return (
     <div className={styles.main}>
-      <video
+      {/* <video
         preload="auto"
         playsInline
         autoPlay
@@ -23,9 +24,10 @@ const Intro = () => {
         muted
         className={styles.backgroundVideo}
         src={"/assets/colorComGlitch.mp4"}
-      />
-      <NavBar />
+      /> */}
 
+      <NavBar />
+      <BrightLights className={styles.brightLights} />
       <div className={styles.content}>
         <div className={styles.cardGrid}>
           <Cards id="myCards" col={1} row={1} />
