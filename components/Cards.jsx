@@ -4,7 +4,7 @@ import { emojisplosion } from "emojisplosion";
 
 import { Tile } from "./Tile";
 import Card from "./Card";
-import SwipeInstructor from "./SwipeIntructor";
+import SwipeInstructor from "./SwipeInstructor";
 
 import styles from "../styles/cards.module.scss";
 import cardData from "../data.js";
@@ -38,7 +38,7 @@ const dataClone = [
 ];
 
 export const Cards = ({ col, row }) => {
-  const [ref, size] = useParentSize();
+  const [ref, size, screenWidth] = useParentSize();
   const [state, setState] = useState({ current: 0, arr: dataClone });
 
   const handleDidSwipeRight = (didSwipeRight) => {
@@ -120,6 +120,8 @@ export const Cards = ({ col, row }) => {
     }
   }
 
+  const finalCardSize = size / 3 <= 290 ? 290 : size / 3;
+
   return (
     <Tile
       captionTop=""
@@ -145,11 +147,10 @@ export const Cards = ({ col, row }) => {
                 id="card"
                 key={item.id}
                 i={i}
-                current={state.current}
                 name={item.content}
                 rotateArray={rotateArray}
                 length={data.length}
-                size={size / 3}
+                size={finalCardSize}
                 style={state.style}
                 cardIndex={cardIndex}
               />
@@ -158,8 +159,9 @@ export const Cards = ({ col, row }) => {
       </div>
       <SwipeInstructor
         className={styles.outerGrid}
-        size={size / 3}
+        size={finalCardSize}
         viewportHeight={size}
+        screenWidth={screenWidth}
       />
     </Tile>
   );

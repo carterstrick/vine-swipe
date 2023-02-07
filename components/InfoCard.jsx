@@ -23,14 +23,6 @@ export const InfoCard = ({ title, name, description, link }) => {
             alt="Play Video"
           />
         </a>
-        {/* <button className={styles.playButton}>
-          <img
-            className={styles.image}
-            src="/assets/playButtonBlue.svg"
-            draggable="false"
-            alt="Play Video"
-          />
-        </button> */}
       </div>
 
       <div className={styles.descriptionLabel}>{description}</div>

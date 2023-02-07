@@ -11,6 +11,13 @@
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .videoTitle {
+    font-size: 20px;
+  }
+}
+
 .nameBadgeBar {
   position: relative;
   display: flex;
@@ -19,6 +26,14 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .nameBadgeBar {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
 }
 
 .nameLabel {
@@ -36,10 +51,29 @@
   border-radius: 12px;
 }
 
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .nameLabel {
+    font-size: 14px;
+    font-family: "ClashDisplay-Medium";
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-right: 30px;
+    padding-bottom: 6px;
+  }
+}
+
 .descriptionLabel {
   font-family: "JetBrains-Regular";
   color: black;
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .descriptionLabel {
+    font-size: 12.5px;
+  }
 }
 
 .verifyContainer {
@@ -52,11 +86,26 @@
   // padding-bottom: 6px;
 }
 
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .verifyContainer {
+    margin-left: -32px;
+  }
+}
+
 .verifyIcon {
   position: relative;
   width: 16px;
   height: 16px;
   margin-top: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .verifyIcon {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .playButton {

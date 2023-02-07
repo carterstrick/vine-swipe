@@ -9,8 +9,7 @@ export const useParentSize = () => {
     const handleSetHeight = () => {
       if (parentRef.current) {
         setHeight(parentRef.current.offsetHeight);
-        console.log(`Height of screen is ${parentRef.current.offsetHeight}`);
-        console.log(`Width of screen is ${parentRef.current.offsetWidth}`);
+        setWidth(parentRef.current.offsetWidth);
       }
     };
 
@@ -23,5 +22,5 @@ export const useParentSize = () => {
     handleSetHeight();
   }, []);
 
-  return [parentRef, height];
+  return [parentRef, height, width];
 };

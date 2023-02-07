@@ -2,7 +2,7 @@
 import { motion, useSpring } from "framer-motion";
 
 import { CardFace } from "./CardFace";
-import SwipeInstructor from "./SwipeIntructor";
+import SwipeInstructor from "./SwipeInstructor";
 import swipeStyle from "../styles/swipeInstructor.module.scss";
 
 // Spring configuration
@@ -14,14 +14,11 @@ const spring = {
   restSpeed: 0.0001,
 };
 
-const Card = ({ i, name, length, size, rotateArray, current, cardIndex }) => {
-  // Card is sized relatively to the container,
+const Card = ({ i, length, size, rotateArray, cardIndex }) => {
+  // Card is sized relatively to the height of the container,
   // just to maintain all ratios.
-
   const cardHeight = size * 1.6 * 1;
   const cardWidth = cardHeight * 0.62;
-  console.log("Card Height: " + cardHeight);
-  console.log("Card Width: " + cardWidth);
 
   // Bunch of helpers
   // to get the correct array slice
@@ -155,7 +152,7 @@ const Card = ({ i, name, length, size, rotateArray, current, cardIndex }) => {
         background: background,
         transition: {
           // delay: (iFromFirst + current) * 0.4, // was 0.025
-          delay: -5,
+          delay: 0.02,
         },
       }}
       style={{
@@ -166,8 +163,8 @@ const Card = ({ i, name, length, size, rotateArray, current, cardIndex }) => {
         rotateX: dRotX,
         rotateY: dRotY,
         rotateZ: dRotZ,
-        width: `${cardWidth}px`,
-        height: `${cardHeight}px`,
+        width: `${cardWidth}px`, // was cardWidth
+        height: `${cardHeight}px`, // was cardHeight
         top: `50%`,
         left: `50%`,
         zIndex: length - i,
