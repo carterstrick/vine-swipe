@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   overflow: hidden;
 
@@ -79,4 +79,12 @@
 
     color: $color_300;
   }
+}
+
+.genericFixedOverflow {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  scrollbar-width: 0px;
 }

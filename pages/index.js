@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <Meta>
       <main className={styles.main}>
-        <Intro />
+        <div className={styles.genericFixedOverflow}>
+          <Intro />
+        </div>
       </main>
     </Meta>
   );
