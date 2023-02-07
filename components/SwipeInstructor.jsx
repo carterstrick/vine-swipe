@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../styles/swipeInstructor.module.scss";
 
 const SwipeInstructor = ({ size, viewportHeight, screenWidth }) => {
@@ -29,14 +30,14 @@ const SwipeInstructor = ({ size, viewportHeight, screenWidth }) => {
       >
         <img
           className={styles.swipeIcon}
-          src="assets/swipeLeft.svg"
+          src={"/swipeLeft.svg"}
           alt="<- Nah"
           draggable="false"
         />
         <div />
         <img
           className={styles.swipeIcon}
-          src="assets/swipeRight.svg"
+          src={"/swipeRight.svg"}
           alt="Yea ->"
           draggable="false"
         />
