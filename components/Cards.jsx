@@ -120,7 +120,7 @@ export const Cards = ({ col, row }) => {
     }
   }
 
-  const finalCardSize = size / 3 <= 290 ? 290 : size / 3;
+  const finalCardSize = size / 3 <= 300 ? 300 : size / 3;
 
   return (
     <Tile
