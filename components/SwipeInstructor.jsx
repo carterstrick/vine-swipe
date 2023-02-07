@@ -29,14 +29,14 @@ const SwipeInstructor = ({ size, viewportHeight, screenWidth }) => {
       >
         <img
           className={styles.swipeIcon}
-          src="/assets/swipeLeft.svg"
+          src="assets/swipeLeft.svg"
           alt="<- Nah"
           draggable="false"
         />
         <div />
         <img
           className={styles.swipeIcon}
-          src="/assets/swipeRight.svg"
+          src="assets/swipeRight.svg"
           alt="Yea ->"
           draggable="false"
         />
